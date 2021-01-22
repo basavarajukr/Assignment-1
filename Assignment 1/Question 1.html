@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Question 1</title>
+    </head>
+    <body>
+
+
+
+        <script>
+            // question1
+            console.log(1 + "2" + "2");
+            // output : 122
+            // reason : single arithmetic operator(+) just concatinates the variables.
+            
+            console.log(1 +  +"2" + "2");
+            // output : 32
+            // reason : Two arithmetic operators(++) perform the addition.
+            //          Here 1+2=3 and 2 is simply concatinated.
+            //          Here string is taken as number(if the value of string is number) when 2 arithmetic operators are used.
+
+            console.log(1 + -"1" + "2");
+            // output : 02
+            // reason : Two arithmetic operators(+-) perform the subtraction.
+            //          Here 1-1=0 and 2 is simply concatinated.
+            //          Here string is taken as number(if the value of string is number) when 2 arithmetic operators are used.
+
+            console.log(+"1" + "1" + "2");
+            // output : 112
+            // reason : Here the arithmetic operator just concatinated all the variables
+            //          If there is no variable to concatinate it just neglects the arithmetic operator.
+
+            console.log("A" - "B" + "2");
+            // output : NaN2
+            // reason : Here the value first 2 strings is not a number hence they are not defined(NaN) 
+            //          and the third string is a number(2) hence it is concatinated with NaN as NaN2.
+
+            console.log("A" - "B" + 2);
+            // output : NaN
+            // reason : Here the value first 2 strings is not a number hence they are not defined(NaN)
+            //          and the number cannot be concatinated with not defined unless it is written in
+            //          inside string.
+
+
+           
+            
+
+        </script>
+    </body>
+</html>
